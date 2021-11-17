@@ -13,6 +13,41 @@
     "./packages/*"
   ],
   "devDependencies": {
-    "lerna": "^4.0.0"
+    "@commitlint/cli": "^14.1.0",
+    "@commitlint/config-conventional": "^14.1.0",
+    "@types/jest": "^26.0.24",
+    "@types/node": "^16.3.3",
+    "@types/supertest": "^2.0.11",
+    "@typescript-eslint/eslint-plugin": "^4.28.3",
+    "@typescript-eslint/parser": "^4.28.3",
+    "eslint": "^7.30.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-jest": "^24.3.6",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "husky": "^7.0.0",
+    "jest": "^27.3.1",
+    "lerna": "^4.0.0",
+    "lint-staged": "^11.2.6",
+    "prettier": "^2.3.2",
+    "rimraf": "^3.0.2",
+    "supertest": "^6.1.5",
+    "ts-jest": "^27.0.5",
+    "ts-node": "^10.1.0",
+    "ts-node-dev": "^1.1.8",
+    "tsconfig-paths-jest": "^0.0.1"
+  },
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "lerna": "lerna",
+    "pre-commit": "lint-staged",
+    "prepare": "husky install",
+    "test": "jest"
+  },
+  "jest": {
+    "rootDir": ".",
+    "projects": [
+      "<rootDir>/packages/*"
+    ]
   }
 }
