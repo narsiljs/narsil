@@ -1,0 +1,14 @@
+{
+  "name": "@narsiljs/core",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^10.0.0"
+  },
+  "scripts": {
+    "prepublish": "npm run build",
+    "prebuild": "rimraf dist",
+    "build": "tsc"
+  }
+}
