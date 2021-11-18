@@ -1,0 +1,21 @@
+{
+  "name": "@narsiljs/mongo",
+  "version": "0.1.2",
+  "main": "dist/index.js",
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "MIT",
+  "scripts": {
+    "prepublish": "npm run build",
+    "prebuild": "rimraf dist",
+    "build": "tsc"
+  },
+  "peerDependencies": {
+    "mongodb": ">=4.0.0"
+  },
+  "devDependencies": {
+    "mongodb": "^4.2.0"
+  }
+}
