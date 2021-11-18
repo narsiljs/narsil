@@ -1,0 +1,25 @@
+{
+  "name": "@narsiljs/express",
+  "version": "0.1.2",
+  "main": "dist/index.js",
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@narsiljs/core": "^0.1.2",
+    "awilix": "^6.0.0",
+    "express": "^4.17.1",
+    "pino-http": "^6.0.0",
+    "types-joi": "^2.1.0"
+  },
+  "scripts": {
+    "prepublish": "npm run build",
+    "prebuild": "rimraf dist",
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13"
+  }
+}
