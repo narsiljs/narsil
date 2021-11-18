@@ -1,0 +1,19 @@
+{
+  "name": "@narsiljs/core",
+  "version": "0.1.2",
+  "main": "dist/index.js",
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^10.0.0"
+  },
+  "scripts": {
+    "prepublish": "npm run build",
+    "prebuild": "rimraf dist",
+    "build": "tsc"
+  },
+  "gitHead": "5a482a9ba21c9c827965ba7616d05aa51282420a"
+}
