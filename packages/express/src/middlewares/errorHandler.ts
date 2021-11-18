@@ -34,6 +34,7 @@ const errorHandler = (
   const { logger } = { ...defaultOptions, ...options };
   const errorResponseBuilder = makeErrorResponseBuilder(errorMap);
 
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   return (err, req, res, next) => {
     logger.error(err.stack);
 
